@@ -3,297 +3,69 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+* {
+    font-family: 'Special Elite', cursive;
+}
 body {
     background-color: rgb(0, 0, 0);
     color: white;
-    display:flex;
+    background: url(../assets/backg.jpg) no-repeat center;
+    background-size: cover;
     min-height: 100vh;
 }
-
-html {
-    font-family: 'Special Elite', cursive;
+.header {
+    background-color: transparent !important;
 }
-
-.contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8rem 2rem 20rem 20rem 2rem;
-    grid-template-areas: 
-    "header header header header"
-    "nav nav nav nav"
-    "main main main aside"
-    "main main main aside"
-    "footer footer footer footer"
-    ;
-}
-
-header {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    background-color: rgb(13, 13, 29);
-    background-size: 100%;
-    color: white;
-    border-style: groove;
-    border-width: 3px;
-    border-color: violet;
-    grid-area: header;
-}
-
-header img {
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
+.header .navbar {
+    background-color: transparent !important;
+  }
+.Logo {
     width: 10rem;
-    height: 8rem;
+    height: 9rem;
 }
-
-header img:hover {
+.Logo:hover {
     transform: scale(4);
     transition: all 2s;
-}
-
-header h1 {
-    font-size: 6rem;
-}
-
-
-nav {
-    display:flex;
-    justify-content: space-between;
-    background-color: rgb(25, 25, 68);
-    background-size: 3rem;
-    border-style: groove;
-    border-width: 3px;
-    border-color: violet;
-    grid-area: nav;
-}
-ul {
-    list-style: none;
-}
-  li {
-    float: left;
-    background-color: gray;
-    margin-right: 10px;
-    border: #D7C8B6 2px solid;
-  }
-  a {
-    color: black;
-    padding: 0 4px;
-    text-decoration: none;
-  }
-  a:hover {
-    background-color: white;
-    color: white;
-  }
-
-main {
-    display: flex;
-    flex-flow: row wrap;
-    background-image: url(../assets/descarga.jpg);
-    justify-content: center;
-    align-content: center;
-    color:white;
-    height: 400px;
-    width: 800px;
-    background-size: contain;
-    padding-top: 300px;
-    padding-bottom: 25px;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    grid-area: main;
-
 }
 
 main:hover {
     box-shadow: 0 0.1rem 0.4rem rgb(248, 248, 248);
 }
 
-
-aside {
+main img {
     display:flex;
-    flex-flow: column wrap-reverse;
-    align-content: center;
     justify-content: center;
-    grid-area: aside;
+}
+.videos {
+    display:flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+article {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+article p {
+    text-align: center;
+}
+
+#noticia {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 footer {
-    grid-area: footer;
-    background-color: rgb(13, 13, 29);
-    background-size: 100%;
-    color: white;
-    border-style: groove;
-    border-width: 3px;
-    bottom: 0;
-    margin-top: auto;
-}
-
-.contenedorB {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8rem 2rem 20rem 20rem 2rem;
-    grid-template-areas: 
-    "header header header header"
-    "nav nav nav nav"
-    "sectionA sectionA sectionB sectionB"
-    "sectionA sectionA sectionB sectionB"
-    "footer footer footer footer"
-    ;
-}
-.sectionA {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: sectionA;
-    margin-left: 4rem;
-}
-.sectionB {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: sectionB;
-}
-h5 {
-    font-size: 5rem;
-}
-
-.contenedorC {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8rem 2rem 20rem 20rem 20rem 2rem;
-    grid-template-areas: 
-    "header header header header"
-    "nav nav nav nav"
-    ". . . ."
-    ". sectionC sectionC ."
-    ". . . ."
-    "footer footer footer footer"
-}
-.sectionC {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: sectionC;
-}
-h2 {
-    font-size: 4rem;
-}
-
-.contenedorD {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8rem 2rem 20rem 20rem 20rem 2rem;
-    grid-template-areas: 
-    "header header header header"
-    "nav nav nav nav"
-    ". sectionD sectionD ."
-    ". sectionD sectionD ."
-    ". sectionE sectionE ."
-    "footer footer footer footer";
-}
-
-.sectionD {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: sectionD;
-    padding-top: 2rem;
-}
-.sectionE {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: sectionE;
-}
-
-@media(max-width:480px){
-    .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header"
-    "nav main"
-    "nav aside"
-    "footer footer";}
-nav { 
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: left;
-    grid-area: nav;
-}
-aside {
-    display:flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-    grid-area: aside;
-}
-}
-
-@media(max-width:480px){
-    .contenedorB {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header"
-    "nav sectionA"
-    "nav sectionB"
-    "footer footer";}
-nav { 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: left;
-    grid-area: nav;
-}
-}
-
-@media(max-width:480px){
-    .contenedorC {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header"
-    "nav sectionC"
-    "nav sectionC"
-    "footer footer";}
-nav { 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: left;
-    grid-area: nav;
-}
-}
-
-@media(max-width:480px){
-    .contenedorD {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header"
-    "nav sectionD"
-    "nav sectionE"
-    "footer footer";}
-nav { 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: left;
-    grid-area: nav;
-}
+    flex-flow: column wrap;
 }

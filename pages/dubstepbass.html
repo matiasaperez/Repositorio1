@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARGENBASS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
-    <div class="contenedorC">
-        <header>
-            <img src="../assets/logo1.png" alt="logo">
-            <h1>ARGENBASS</h1>
-            <p>Somos el under de Argentina</p>
-        </header>
-        <nav>
-                <ul>
-                <li> <a href="../index.html">Inicio</a> </li>              
-                <li> <a href="dubstepbass.html">Dubstep & Bass</a> </li>           
-                <li> <a href="raptrap.html">Rap & Trap</a> </li>          
-                <li> <a href="fechas.html">Fechas</a> </li>         
-                <li> <a href="contacto.html">Contacto</a> </li>
-                </ul>
-                <form>
-                    <p> Busqueda de noticias: <input type="search" name="busquedadenoticias" placeholder="Buscar...">      
-                    <input type="submit" value="Buscar">   
-                    </p>
-                </form>   
-        </nav>
-
-        <div class="sectionC">
-        <h2>TITULO</h2>
-        <br>
-        <img src="../assets/dubs.jpg" alt="imagen de dubstep"> 
-        <br><br>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odio quibusdam voluptatem quidem hic repudiandae iure ab illo saepe veritatis! Eligendi magni neque tempore, obcaecati reprehenderit unde possimus explicabo eum accusantium libero nam, distinctio natus dolores, pariatur repudiandae veritatis inventore asperiores porro quis similique aspernatur! Ducimus et vero eum molestiae.</h3>
-        </div>
-
-    
-        <footer>
-        <nav>
-            <ul>
-                <li> <a href="https://www.facebook.com/">@ArgenBass</a></li>              
-                <li> <a href="https://www.instagram.com/">@ArgenBass.Oficial</a></li>           
-                <li> <a href="https://youtube.com/">ArgenBass</a> </li>          
-                <li> <a href="https://twitter.com/">@ArgenBass.tw</a> </li>         
-                <li> <a href="https://soundcloud.com/">ArgenBass</a> </li>
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARGENBASS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/css/bootstrap.css">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="#">
+                      <img src="../assets/logo1.png" class="Logo" alt="Logo">
+                      <p class="h2">ARGENBASS</p>
+                      <p class="h6">Somos el Under de Argentina</p>
+                    </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 
-    
-        </footer>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="fechas.html">Fechas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dubstepbass.html">Dusbtep & Bass</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="raptrap.html">Rap & Trap</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+              </header>
+
+              <div class="container">
+                <div class="row-fluid">
+                  <div class="col-fluid">
+                    <main id="noticia">
+                        <br><p class="h2">TITULO</p>
+                        <img src="../assets/carr2.jpg" alt="imagen de dubstep"> 
+                        <br><br>
+                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugit modi repellendus facilis nesciunt? Ex delectus neque nisi asperiores. Quasi, voluptatibus. Architecto quia suscipit voluptas assumenda! Ipsam totam asperiores maxime.</p>
+                    </main>
+                  </div>
+                </div>
+
+            <br><br>
+            
+            <div class="container">
+                <footer class="bg-dark text-white">
+                    <ul>
+                        <li> <a href="https://www.facebook.com/">@ArgenBass</a></li>              
+                        <li> <a href="https://www.instagram.com/">@ArgenBass.Oficial</a></li>           
+                        <li> <a href="https://youtube.com/">ArgenBass</a> </li>          
+                        <li> <a href="https://twitter.com/">@ArgenBass.tw</a> </li>         
+                        <li> <a href="https://soundcloud.com/">ArgenBass</a> </li>
+                    </ul>
+                   
+                    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+                      © 2022 Copyright:
+                      <a class="text-white" href="index.html">argenbass.com</a>
+                    </div>
+                    
+                </footer>
+            </div>
     </div>
-</body>
+    <script src="styles/js/bootstrap.js"></script>
+    </body>
 </html>
