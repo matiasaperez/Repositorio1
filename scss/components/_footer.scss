@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    ul {
+        display: flex;
+        list-style: none;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}

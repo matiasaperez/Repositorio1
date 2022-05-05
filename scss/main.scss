@@ -1,72 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-* {
-    font-family: 'Special Elite', cursive;
-}
-body {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    background: url(../assets/backg.jpg) no-repeat center;
-    background-size: cover;
-    min-height: 100vh;
-}
-.header {
-    background-color: transparent !important;
-    .navbar {
-        background-color: transparent !important;
-      }
-}
-
-.Logo {
-    width: 10rem;
-    height: 9rem;
-    &:hover {
-        transform: scale(4);
-        transition: all 2s;
-    }
-}
-
-main img {
-    display:flex;
-    justify-content: center;
-    &:hover {
-        box-shadow: 0 0.1rem 0.4rem rgb(248, 248, 248);
-    }
-}
-.videos {
-    display:flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-between;
-}
-article {
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    p {
-        text-align: center;
-    }
-}
-
-#noticia {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    text-align: center;
-}
+@import "./utilities/variables";
+@import "./components/reset";
+@import "./components/body";
+@import "./components/container";
+@import "./components/header";
+@import "./components/footer";
 
 
 
-footer {
-    display: flex;
-    flex-flow: column wrap;
-    ul {
-        display: flex;
-        list-style: none;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-}
+
+
+
+
+
+
+
+

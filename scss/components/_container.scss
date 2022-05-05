@@ -1,0 +1,31 @@
+.container {
+    #noticia {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+    }
+main {
+        img {
+        display:flex;
+        justify-content: center;
+        &:hover {
+            box-shadow: 0 0.1rem 0.4rem rgb(248, 248, 248);
+        }
+    }
+    }
+article {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        article p {
+            text-align: center;
+        }
+        .videos {
+            display:flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            justify-content: space-between;
+        }
+    }

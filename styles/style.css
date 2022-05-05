@@ -1,77 +1,58 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 * {
-  font-family: "Special Elite", cursive;
-}
+  font-family: 'Special Elite', cursive; }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   background: url(../assets/backg.jpg) no-repeat center;
   background-size: cover;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
 
-.header {
-  background-color: transparent !important;
-}
-.header .navbar {
-  background-color: transparent !important;
-}
-
-.Logo {
-  width: 10rem;
-  height: 9rem;
-}
-.Logo:hover {
-  transform: scale(4);
-  transition: all 2s;
-}
+.container #noticia {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center; }
 
 main img {
   display: flex;
-  justify-content: center;
-}
-main img:hover {
-  box-shadow: 0 0.1rem 0.4rem rgb(248, 248, 248);
-}
-
-.videos {
-  display: flex;
-  flex-flow: row nowrap;
-  align-content: center;
-  justify-content: space-between;
-}
+  justify-content: center; }
+  main img:hover {
+    box-shadow: 0 0.1rem 0.4rem #f8f8f8; }
 
 article {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-}
-article p {
-  text-align: center;
-}
+  justify-content: center; }
+  article article p {
+    text-align: center; }
+  article .videos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between; }
 
-#noticia {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  text-align: center;
-}
+.header {
+  background-color: transparent !important; }
+  .header .navbar {
+    background-color: transparent !important; }
+    .header .navbar .Logo {
+      width: 10rem;
+      height: 9rem; }
+      .header .navbar .Logo:hover {
+        transform: scale(4);
+        transition: all 2s; }
 
 footer {
   display: flex;
-  flex-flow: column wrap;
-}
-footer ul {
-  display: flex;
-  list-style: none;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=style.css.map */
+  flex-flow: column wrap; }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
