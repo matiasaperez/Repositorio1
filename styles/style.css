@@ -13,29 +13,45 @@ body {
   background-size: cover;
   min-height: 100vh; }
 
-.container #noticia {
+.container {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  text-align: center; }
+  flex-flow: column wrap-reverse;
+  align-items: center;
+  align-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .container #noticia {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center; }
 
-main img {
+main {
   display: flex;
-  justify-content: center; }
-  main img:hover {
-    box-shadow: 0 0.1rem 0.4rem #f8f8f8; }
+  padding-bottom: 2rem; }
+  main img {
+    display: flex;
+    justify-content: center; }
+    main img:hover {
+      box-shadow: 0 0.1rem 0.4rem #f8f8f8; }
 
 article {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 2rem; }
   article article p {
     text-align: center; }
-  article .videos {
+
+aside {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-flow: column nowrap; }
+  aside aside p {
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-between; }
+    flex-flow: column nowrap;
+    text-align: center; }
 
 .header {
   background-color: transparent !important; }
@@ -45,7 +61,7 @@ article {
       width: 10rem;
       height: 9rem; }
       .header .navbar .Logo:hover {
-        transform: scale(4);
+        transform: scale(2);
         transition: all 2s; }
 
 footer {
@@ -55,4 +71,11 @@ footer {
     display: flex;
     list-style: none;
     flex-flow: row nowrap;
-    justify-content: space-between; }
+    align-content: center;
+    justify-content: space-around; }
+    footer ul .redes {
+      width: 3rem;
+      height: 3rem; }
+      footer ul .redes:hover {
+        transform: scale(2);
+        transition: all 2s; }

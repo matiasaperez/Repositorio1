@@ -1,4 +1,10 @@
 .container {
+    display: flex;
+    flex-flow: column wrap-reverse;
+    align-items: center;
+    align-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     #noticia {
         display: flex;
         flex-flow: column nowrap;
@@ -7,6 +13,8 @@
     }
     }
 main {
+        display: flex;
+        padding-bottom: 2rem;
         img {
         display:flex;
         justify-content: center;
@@ -19,13 +27,19 @@ article {
         display:flex;
         flex-flow: column wrap;
         justify-content: center;
+        padding-top: 2rem;
         article p {
             text-align: center;
         }
-        .videos {
-            display:flex;
-            flex-flow: row nowrap;
-            align-content: center;
-            justify-content: space-between;
-        }
     }
+aside {
+    display:flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-flow: column nowrap;
+    aside p {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+}

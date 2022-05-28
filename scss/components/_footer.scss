@@ -5,6 +5,16 @@ footer {
         display: flex;
         list-style: none;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        align-content: center;
+        justify-content: space-around;
+        .redes {
+            width: 3rem;
+            height: 3rem;
+            &:hover {
+                    transform: scale(2);
+                    transition: all 2s;
+                }
+            }
     }
 }
+
